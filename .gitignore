@@ -1,0 +1,27 @@
+# Ignore drupal core.
+web/core
+
+# Ignore paths that contain user-generated content.
+web/sites/*/files
+/files-private
+web/sites/*/private
+
+# Ignore contrib modules. These should be created during build process.
+web/modules/contrib
+web/themes/contrib
+web/profiles/contrib
+web/libraries
+drush/contrib
+drush/Commands
+
+# Ignore custom theme build artifacts
+web/themes/custom/*/node_modules
+web/themes/custom/*/css
+web/themes/custom/*/styleguide
+
+#Composer vendor
+vendor/
+vendor/.git
+
+# OS X
+.DS_Store
